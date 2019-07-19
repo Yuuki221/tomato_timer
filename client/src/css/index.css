@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html {
+	font-family: 'Roboto', serif;
+	position: relative;
+}
+
+.app-header {
+	height: 70px;
+}
+	.app-header h6 {
+		padding-left: 75px;
+		vertical-align: middle;
+		line-height: 70px;
+	}
+	.profile-icon {
+		width: 48px;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		display: none;
+	}
+	.profile-button-group{
+		position: absolute;
+		top: 10px;
+		right: 30px;
+	}
+
+.content-row {
+	position: absolute;
+	width: 90%;
+	height: 350px;
+	/*padding: 20px;*/
+	display: grid;
+	/*margin: 5%;*/
+	grid-template-columns: 450px 80px 450px;
+}
+
+
+.outer-container {
+	position: relative;
+	height: 300px;
+	width: 100%;
+
+}
+	.inner-paper {
+		position: absolute;
+		height: 300px;
+		width: 100%;
+		margin: 50px;
+	}
+	.container-title {
+		height: 50px;
+	}
+		.title-paper {
+			height: 50px;
+		}
+		.main-page-subtitle {
+			padding: 10px;
+			padding-left: 20px;
+		}
+
+	.small-segment {
+		position: relative;
+		height: 80px;
+		width: 100%;
+	}
+		.segment-paper {
+			height: 89px;
+			width: 100%;
+		}
+
+	.row-1 {
+		margin: 5%;
+		padding: 20px;
+	}
+
+	.row-2 {
+		margin-top: 500px;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding: 20px;
+	}
+
+.todo-task-outer {
+	height: 200px;
+	width: 100%;
+}
+	.input-container {
+		margin-left: 55px;
+	}
+	.todo-task-container {
+		overflow: scroll;
+	}
+	.todo-task-button {
+		margin-top: 30px;
+		margin-left: 50px;
+	}
+
+
+
+/* stat page css */
+#stat-date-options-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	border-bottom: 1px solid grey;
+}
+	.stat-date-option-sec {
+		width: 200px;
+		height: 70px;
+	}
+
+	#choose-date-range-btn {
+		width: 180px;
+		height: 45px;
+	}
+
+.stat-header-title {
+	border-bottom: 1px solid grey;
+}
+
+/* Tomato Icon */
+.tomato-icon-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+#tomato {
+	background: #FF6347;
+	height: 50px;
+	width: 100px;
+	border-radius: 0 0 50px 50px;
+	position: relative;
+	transition: all .3s ease-in-out;
+}
+
+#tomato:hover {
+	transform: scale(1.2);
+}
+
+#tomato::before {
+	content:"";
+	width: 32px;
+	height: 32px;
+	border: 1px solid #FF6347;
+	background: #FF6347;
+	position: absolute;
+	border-radius: 0 32px 0 0;
+	top:-32px;
+	right:0;
+	transition: all .2s ease-in-out;
+}
+
+#tomato::after {
+	content: "";
+	width: 32px;
+	height: 32px;
+	border: 1px solid #FF6347;
+	background: #FF6347;
+	position: absolute;
+	border-radius: 32px 0 0 0;
+	top: -32px;
+	transition: all .2s ease-in-out;
+}
+
+#tomato-icon-tomatoFill {
+	width: 36px;
+	height: 16px;
+	background: #FF6347;
+	position: absolute;
+	top: -16px;
+	left: 32px;
+	transition: all .2s ease-in-out;
+}
+
+#tomato-icon-tomatoFill::before {
+	content: "";
+	width: 18px;
+	height: 16px;
+	background: #FF6347;
+	position: absolute;
+	border-radius: 0 16px 0 0;
+	top:-16px;
+	transition: all .2s ease-in-out;
+}
+
+#tomato-icon-tomatoFill::after {
+	content: "";
+	width: 18px;
+	height: 16px;
+	background: #FF6347;
+	position: absolute;
+	border-radius: 16px 0 0 0;
+	top: -16px;
+	right: 0;
+	transition: all .2s ease-in-out;
+}
+
+#tomato-icon-tomatoTop {
+	background: #A8B848;
+	height:16px;
+	width:16px;
+	border-radius:16px 0 16px 0;
+	position:absolute;
+	transform: rotateZ(135deg);
+	top: -16px;
+	z-index: 1;
+	left: 41px;
+	transition: all .2s ease-in-out;
+}
+
+#tomato-icon-tomatoTop::before {
+	content: "";
+	background: #A8B848;
+	height:16px;
+	width:16px;
+	border-radius:16px 0 16px 0;
+	position:absolute;
+	z-index:1;
+	transform: rotateZ(90deg);
+	top:12px;
+	transition: all .2s ease-in-out;
+}
+
+#tomato-icon-tomatoTop::after {
+	content: "";
+	background: #A8B848;
+	height:16px;
+	width:16px;
+	border-radius: 16px 0 16px 0;
+	position: absolute;
+	z-index: 1;
+	transform: rotateZ(90deg);
+	top: -2px;
+	right: 13px;
+	transition: all .2s ease-in-out;
+}
+
+/* Login Page Style */
+.login-form {
+	width: 450px;
+	height: 450px;
+
+	position: absolute;
+	top: 180px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	.login-username-field {
+		width: 450px;
+	}
+	.login-password-field {
+		width: 450px;
+	}
+	#page-login-button {
+		margin-left: 180px;
+		margin-top: 55px;
+	}
+
+/* Signup Page Style */
+
+.signup-page {
+	width: 450px;
+	height: 450px;
+
+	position: absolute;
+	top: 180px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+	.signup-username-field {
+		width: 450px;
+	}
+	.signup-password-field {
+		width: 450px;
+	}
+	#page-signup-button {
+		margin-left: 180px;
+		margin-top: 55px;
+	}
+
+/* Signup Page Style */
+
+.stat-header-title {
+	padding: 25px;
+}
+
+	.stat-header-data-range-title {
+		padding-left: 25px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#stat-date-options-container {
+		padding-left: 25px;
+		padding-top: 30px;
+		padding: 10px;
+	}
+		#tomato-timer-counts-stats-container {
+			margin-left: 100px;
+			position: absolute;
+			top: 400px;
+			bottom: 0;
+			width: 550px;
+			right: 220px;
+			left: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#task-number-counts-stats-container {
+			width: 550px;
+			position: absolute;
+			top: 750px;
+			right: 220px;
+			left: 0;
+			bottom: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#timer-stats-summary {
+			position: absolute;
+			left: 840px;
+			top: 400px;
+		}
+		/* Stat Summary Style*/
+		.stat-summary-table {
+			position: absolute;
+		}
+			.stat-summary-row1 {
+				position: absolute;
+			}
+				.stat-row1-cell1 {
+					position: absolute;
+				}
+				.stat-row1-cell2 {
+					position: absolute;
+					left: 150px;
+				}
+			.stat-summary-row2 {
+				position: absolute;
+				top: 50px;
+			}
+				.stat-row2-cell1 {
+					position: absolute;
+				}
+				.stat-row2-cell2 {
+					position: absolute;
+					left: 150px;
+				}
+			.stat-summary-row3 {
+				position: absolute;
+				top: 100px;
+			}
+				.stat-row3-cell1 {
+					position: absolute;
+				}
+				.stat-row3-cell2 {
+					position: absolute;
+					left: 150px;
+				}
+
+
+
+
+
+
+
+
+
+
